@@ -126,9 +126,9 @@ while running:
             for j in range(num_of_enemies):
                 enemyY[j]=2000
             mixer.music.stop()
+            bulletState="ready"
             game_over_text()
             game_over_sound()
-            bulletState="ready"
             break
         enemyX[i] += enemyXchange[i]
         if enemyX[i] <= 0:
